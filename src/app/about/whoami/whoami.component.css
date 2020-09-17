@@ -1,0 +1,12 @@
+.parallax-1{
+    background-image: url("../../../assets/images/bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.index-img{
+    height: 300px;
+}
