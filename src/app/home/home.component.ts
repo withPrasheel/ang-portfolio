@@ -10,66 +10,46 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   message1="Hi, I am Prasheel"
-  // message2=['I am a Software Developer','I love to build things','I am Very Passionate About What I Do']
-  message2='I am a Software Developer';
+  message2=['Software Developer','Frontend Developer','I love to build things']
   display1:string='';
   display2:string='';
-  i=0;
+  flag=true;
   
   ngOnInit(): void {
-    // this.func(true);
-    this.typingCallback(this);
-    // this.display1='';
-    this.typingCallback2(this);
-
+    this.typingCallback(this);   // Calling message1 on initialisation
   }
-  // func(that) {
-  //   console.log(this.print1);
-  //   if(that)
-  //   {
-  //     this.print1='he';
-  //   }
-  //   else
-  //   {
-  //     this.print1="Heheheheh";
-  //   }
-  //   console.log('-----'+this.print1);
-  //   setTimeout(this.func,1000,false);
-    
-
-  // }
-  // private typewriter_text: string = "Thank you for your interest";
-  // private typewriter_display: string = "";
 
   typingCallback(that) {
     let total_length = that.message1.length;
     let current_length = that.display1.length;
     if (current_length < total_length) {
       that.display1 += that.message1[current_length];
-      // if(that.message1[current_length]=='i')
-      // {
-      //   console.log('------------')
-      //   setTimeout(that.typingCallback, 1000, that);
-      // }
-
-      setTimeout(that.typingCallback, 100, that);
+      setTimeout(that.typingCallback, 100, that);       // recursively calling itself for display to update
     } else {
-      // that.typewriter_display = "";
+      that.typer(that,0);      // Calling the typer function for continous display of message2
     }
   }
-  typingCallback2(that) {
-    let total_length = that.message2.length;
-    let current_length = that.display2.length;
-    if (current_length < total_length) {
-      that.display2 += that.message2[current_length];
-      // if(that.message1[current_length]=='i')
-      // {
-      //   console.log('------------')
-      //   setTimeout(that.typingCallback, 1000, that);
-      // }
 
-      setTimeout(that.typingCallback, 100, that);
-    } else {
-      // that.typewriter_display = "";
+    typer(that,i){
+      i=i%3;
+      let message=that.message2[i];
+      let total_length=message.length;
+      let current_length = that.display2.length;
+      if(current_length == total_length){
+        that.flag=false;                    // a flag is used here to track if the message2[i] has been fully displayed 
+      }
+      if (current_length < total_length && that.flag) {
+        that.display2 +=message[current_length];
+        setTimeout(that.typer, 100,  that,i); // typer recursive call
+      }
+      else if(!that.flag && current_length!=0)
+      {
+        that.display2 = that.display2.substring(0,current_length-1);  // updating that 2nd msg with a sting which has one less message
+        setTimeout(that.typer, 100,  that,i);
+      }
+      else{
+        that.flag=true;                       // updating the flag and calling the next msg
+        setTimeout(that.typer, 100, that,i+1);
+      }
     }
-}}
+}

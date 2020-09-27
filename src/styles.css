@@ -8,3 +8,13 @@
 .flex{
     display: flex;
 }
+
+.underline{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #f1cd8f;
+    /* margin: 20px auto; */
+    margin-top: 8px;
+}
+

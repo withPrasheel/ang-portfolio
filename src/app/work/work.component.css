@@ -1,0 +1,49 @@
+.work-parent{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.project-list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* background-color: chartreuse; */
+    margin-top: 30px;
+}
+.row{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card{
+    width: 38%;
+    height: 350px;
+    
+}
+
+.card-image{
+    height: 252px;
+    width: 100%;
+    background-color: pink;
+    /* width: 40%; */
+}
+
+.icon{
+    height: 23.8px;
+    width: 23.8px;
+    /* background-image: url('../../assets/images/linkedin.svg'); */
+    /* border-radius: 50% 50%; */
+}
+
+.lower-card{
+    display: flex;
+    justify-content: space-between;
+
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+  }
