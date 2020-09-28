@@ -41,6 +41,7 @@
 .lower-card{
     display: flex;
     justify-content: space-between;
+    background-color: green;
 
 }
 .icons{

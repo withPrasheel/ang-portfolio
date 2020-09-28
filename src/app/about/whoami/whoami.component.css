@@ -4,9 +4,53 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    /* height: 700px; */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+.floating-pallet {
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 48px 48px 48px 48px;
+  }
+  
+
+  .first-half {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .second-half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
 .index-img{
     height: 300px;
 }
+
+
+
+  .underline{
+      margin-bottom: 40px;
+  }
