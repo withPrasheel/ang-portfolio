@@ -1,12 +1,27 @@
 <div class="nav-bar">
-    <div class="flex img-div">
-        <img class="logo-img" [routerLink]="['/home']" src="../../assets/images/logo.png" alt="Logo" title="Prasheel">
-    </div>
-    <div class="flex nav-list">
-        <a class="link" [routerLink]="['/home']">Home</a>
-        <a class="link" [routerLink]="['/about']">About</a>
-        <a class="link" [routerLink]="['/work']">Work</a>
-        <a class="link" [routerLink]="['/contact']">Contact</a>
-        <a class="cv link" href="../../assets/Prasheel_Resume_R.pdf">CV</a>
-    </div>
+  <div class="flex img-div">
+    <img
+      class="logo-img"
+      [routerLink]="['/home']"
+      src="../../assets/images/logo.png"
+      alt="Logo"
+      title="Prasheel"
+    />
+  </div>
+  <div class="flex nav-list">
+    <a class="link" [routerLink]="['/home']">Home</a>
+    <a class="link" [routerLink]="['/about']">About</a>
+    <a class="link" [routerLink]="['/work']">Work</a>
+    <a class="link" [routerLink]="['/contact']">
+      <!-- <img
+        src="../../assets/images/contact-us.svg"
+        alt="Contact Me"
+        style="height: 40px"
+      /> -->
+      Contact
+    </a>
+    <a class="cv link" href="../../assets/Prasheel_Resume_R.pdf">
+      <img src="../../assets/images/cv.svg" alt="" style="height: 40px" />
+    </a>
+  </div>
 </div>
