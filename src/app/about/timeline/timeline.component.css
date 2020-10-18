@@ -1,8 +1,277 @@
-.parallax-2{
-    background-image: url("../../../assets/images/pencil.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
+.parallax-2 {
+  background-image: url("../../../assets/images/pencil.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
 }
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700");
+
+/* _variables.css */
+
+/* _mixins.css */
+
+/* _global.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f0f0f0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* _wrapper.css */
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* _page-section.css */
+.page-section {
+  padding: 50px 0;
+}
+@media (min-width: 800px) {
+  .page-section {
+    padding: 100px 0;
+  }
+}
+.page-section--gray {
+  background-color: #f0f0f0;
+}
+
+/* _section-title.css */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 60px 0;
+}
+@media (min-width: 800px) {
+  .section-title {
+    font-size: 55px;
+  }
+}
+.section-title--gray {
+  color: #9d9da6;
+}
+
+/* _sprite.css */
+.icon {
+  background-image: url("https://www.pes.edu/wp-content/uploads/2020/03/pes_logo1.png");
+  display: inline-block;
+}
+
+.no-svg .icon {
+  background-image: url("http://mehmetguler.xyz/codepen/responsive-timeline/sprite-fbf7a24a.png");
+}
+
+.icon--content-logo {
+  width: 74px;
+  height: 69px;
+  background-position: 0 0;
+}
+
+.icon--css3 {
+  width: 24px;
+  height: 27px;
+  background-position: 92.5% 39.130434782608695%;
+}
+
+.icon--html5 {
+  width: 25px;
+  height: 27px;
+  background-position: 0 100%;
+}
+
+.icon--javascript {
+  width: 25px;
+  height: 27px;
+  background-position: 31.645569620253166% 100%;
+}
+
+.icon--sketch {
+  width: 30px;
+  height: 27px;
+  background-position: 100% 0;
+}
+
+/* _timeline.css */
+.timeline {
+  position: relative;
+  padding: 100px 0;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 4px;
+  height: 100%;
+  background-color: #dfdfdf;
+}
+@media (min-width: 800px) {
+  .timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+.timeline__item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline__item::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.timeline__item:nth-child(2n) .timeline__item__content {
+  float: right;
+}
+@media (min-width: 800px) {
+  .timeline__item:nth-child(2n) .timeline__item__content::before {
+    left: -20px;
+    border-right: 20px solid #fff;
+    border-left: 0;
+  }
+}
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+.timeline__item__date {
+  background-color: #dfdfdf;
+  font-weight: 300;
+  width: 140px;
+  position: absolute;
+  padding: 10px;
+  top: -18px;
+  left: 10%;
+  margin-left: -33px;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  color: #adadad;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 1;
+}
+@media (min-width: 800px) {
+  .timeline__item__date {
+    top: 30px;
+    left: 50%;
+    margin-left: -70px;
+  }
+}
+.timeline__item__date strong {
+  font-weight: 700;
+}
+.timeline__item__content {
+  width: 80%;
+  background: #fff;
+  border-radius: 6px;
+  float: right;
+  transition: all 0.3s ease-out;
+  padding: 30px 30px 25px 30px;
+  position: relative;
+}
+@media (min-width: 800px) {
+  .timeline__item__content {
+    width: 36%;
+    float: inherit;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline__item__content {
+    width: 40%;
+    float: inherit;
+  }
+}
+@media (min-width: 800px) {
+  .timeline__item__content::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fff;
+  }
+}
+.timeline__item__content__logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.timeline__item__content__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #464545;
+}
+@media (min-width: 800px) {
+  .timeline__item__content__title {
+    font-size: 24px;
+  }
+}
+.timeline__item__content__description {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #a7a7a6;
+}
+@media (min-width: 800px) {
+  .timeline__item__content__description {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+.timeline__item__content__techs {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.child1 {
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: white; /* fallback color */
+  background-image: url("../../../assets/images/attra_logo.png");
+  background-position: center;
+  background-size: cover;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  /* opacity: 0.2; */
+  /* width: 40%; */
+}
+
+.child2 {
+  background-color: white; /* fallback color */
+  background-image: url("../../../assets/images/softtekslogo.png");
+  background-position: center;
+  background-size: cover;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+}
+
+/* .child::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(152, 66, 211, 0.63);
+} */
