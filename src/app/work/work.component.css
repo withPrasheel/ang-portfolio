@@ -1,50 +1,56 @@
-.work-parent{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+.work-parent {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #f5f5f5;
 }
-.project-list{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    /* background-color: chartreuse; */
-    margin-top: 30px;
+.project-list {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* background-color: chartreuse; */
+  margin-top: 30px;
 }
-.row{
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.row {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.card{
-    width: 38%;
-    height: 350px;
-    
-}
-
-.card-image{
-    height: 252px;
-    width: 100%;
-    background-color: pink;
-    /* width: 40%; */
+.card {
+  width: 38%;
+  height: 350px;
 }
 
-.icon{
-    height: 23.8px;
-    width: 23.8px;
-    /* background-image: url('../../assets/images/linkedin.svg'); */
-    /* border-radius: 50% 50%; */
+.card-image {
+  height: 252px;
+  width: 100%;
+  background-color: pink;
+  /* width: 40%; */
 }
 
-.lower-card{
-    display: flex;
-    justify-content: space-between;
-    background-color: green;
-
+.image {
+  height: 100%;
+  width: 100%;
 }
-.icons{
-    display: flex;
-    flex-direction: column;
-  }
+
+.icon {
+  height: 23.8px;
+  width: 23.8px;
+  /* background-image: url('../../assets/images/linkedin.svg'); */
+  /* border-radius: 50% 50%; */
+}
+
+.lower-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3% 1rem 4%;
+  background-color: white;
+  /* background-color: green; */
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+}
