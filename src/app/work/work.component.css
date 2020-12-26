@@ -11,6 +11,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  margin-top: 70px;
 }
 .project-list {
   display: flex;
@@ -85,4 +86,15 @@
 .line2 {
   font-size: 0.8rem;
   color: #4e4e4e;
+}
+
+.strip-back {
+  background-color: black;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
 }

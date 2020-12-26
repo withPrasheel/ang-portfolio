@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 70px;
 }
 
 .floating-pallet {
@@ -37,8 +38,6 @@
   margin-left: 15px;
   margin-right: 15px;
 }
-
-
 
 .first-half {
   display: flex;
@@ -78,50 +77,77 @@
   border-radius: 0.25rem;
 }
 
-.underline{
-    /* padding-left: 15px; */
-    /* margin-left: 15px; */
-    margin-bottom: 30px;
+.underline {
+  /* padding-left: 15px; */
+  /* margin-left: 15px; */
+  margin-bottom: 30px;
 }
 
-.ip-format-big{
-    height: 90px;
+.ip-format-big {
+  height: 90px;
 }
 
-.ip-big{
-    height: 90px;
+.ip-big {
+  height: 90px;
 }
 
-.btn-big{
-    /* display: inline-block; */
-    /* display: inline; */
-    width: 220px;
-    border-radius: 5rem;
-    padding: .9rem 2.3rem;
-    font-size: 1.2rem;
-    border-color: #cde1f8;
-    border: 1px solid transparent;
+.btn-big {
+  /* display: inline-block; */
+  /* display: inline; */
+  width: 220px;
+  border-radius: 5rem;
+  padding: 0.9rem 2.3rem;
+  font-size: 1.2rem;
+  border-color: #cde1f8;
+  border: 1px solid transparent;
 }
 
-.icon-parent{
-    /* background-color:pink; */
-    /* border-width: 3px; */
-    box-shadow: 0 0 0 3px #0078ff;
-    /* background-image: url('../../assets/images/linkedin.svg'); */
-    border-radius: 50% 50%;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    margin-top: 20px;
+.btn-big:hover {
+  /* border: #007bff; */
+  color: white;
+  background-color: #007bff;
 }
 
-.icon{
-    height: 23.8px;
-    width: 23.8px;
-    /* background-image: url('../../assets/images/linkedin.svg'); */
-    /* border-radius: 50% 50%; */
+.icon-parent {
+  /* background-color:pink; */
+  /* border-width: 3px; */
+  box-shadow: 0 0 0 3px #0078ff;
+  /* background-image: url('../../assets/images/linkedin.svg'); */
+  border-radius: 50% 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-top: 20px;
 }
 
+.icon-parent:hover {
+  background-color: #ff8700;
+  /* background-color: #ff8700; */
+  box-shadow: 0 0 0 3px #ff8700;
+  /* color: white; */
+  /* color: pink; */
+  -webkit-filter: invert(1); /* safari 6.0 - 9.0 */
+  filter: invert(1);
+  /* background-color: #0078ff; */
+}
+
+.icon {
+  height: 23.8px;
+  width: 23.8px;
+  /* background-image: url('../../assets/images/linkedin.svg'); */
+  /* border-radius: 50% 50%; */
+}
+
+.strip-back {
+  background-color: black;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
