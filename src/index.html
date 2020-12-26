@@ -19,6 +19,36 @@
     <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
   </head>
   <body>
+    <div id="loading">
+      <div class="body">
+        <span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="base">
+          <span></span>
+          <div class="face"></div>
+        </div>
+      </div>
+      <div class="longfazers">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1 class="loadText">Loading</h1>
+    </div>
+
     <app-root></app-root>
+    <script>
+      var preloader = document.getElementById("loading");
+      setTimeout(myFunction, 2000);
+
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
   </body>
 </html>
