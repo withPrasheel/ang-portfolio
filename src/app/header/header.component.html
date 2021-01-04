@@ -9,15 +9,33 @@
     /> -->
   </div>
   <div class="flex nav-list">
-    <a class="link" [routerLink]="['/home']">HOME</a>
-    <a class="link" [routerLink]="['/about']">ABOUT</a>
-    <a class="link" [routerLink]="['/work']">WORK</a>
-    <a class="link" [routerLink]="['/contact']">
-      <!-- <img
-        src="../../assets/images/contact-us.svg"
-        alt="Contact Me"
-        style="height: 40px"
-      /> -->
+    <a
+      class="link uline uliner"
+      id="home"
+      (click)="uliner('home')"
+      [routerLink]="['/home']"
+      >HOME</a
+    >
+    <a
+      class="link uline"
+      id="about"
+      (click)="uliner('about')"
+      [routerLink]="['/about']"
+      >ABOUT</a
+    >
+    <a
+      class="link uline"
+      id="work"
+      (click)="uliner('work')"
+      [routerLink]="['/work']"
+      >WORK</a
+    >
+    <a
+      class="link uline"
+      id="contact"
+      (click)="uliner('contact')"
+      [routerLink]="['/contact']"
+    >
       CONTACT
     </a>
     <a class="cv link" href="../../assets/Prasheel_Resume_R.pdf">
