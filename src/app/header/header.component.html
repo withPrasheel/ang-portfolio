@@ -1,12 +1,53 @@
 <div class="nav-bar">
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+        <a
+          class="link uline uliner"
+          id="home2"
+          (click)="uliner('home')"
+          [routerLink]="['/home']"
+          >HOME</a
+        >
+        <a
+          class="link uline"
+          id="about2"
+          (click)="uliner('about')"
+          [routerLink]="['/about']"
+          >ABOUT</a
+        >
+        <a
+          class="link uline"
+          id="work2"
+          (click)="uliner('work')"
+          [routerLink]="['/work']"
+          >WORK</a
+        >
+        <a
+          class="link uline"
+          id="contact2"
+          (click)="uliner('contact')"
+          [routerLink]="['/contact']"
+        >
+          CONTACT
+        </a>
+      </ul>
+    </div>
+  </nav>
+
   <div class="flex img-div">
-    <!-- <img
+    <img
       class="logo-img"
       [routerLink]="['/home']"
-      src="../../assets/images/logo.png"
+      src="../../assets/images/pnlogo.png"
       alt="Logo"
       title="Prasheel"
-    /> -->
+    />
   </div>
   <div class="flex nav-list">
     <a
@@ -42,4 +83,13 @@
       <img src="../../assets/images/cv.svg" alt="" style="height: 40px" />
     </a>
   </div>
+  <!-- <div class="menu-btn">
+    <div class="menu-btn__burger"></div>
+    <select>
+      <option value="volvo">HOME</option>
+      <option value="saab">ABOUT</option>
+      <option value="opel">WORK</option>
+      <option value="audi">CONTACT</option>
+    </select>
+  </div> -->
 </div>

@@ -7,12 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
+    // const menuBtn = document.querySelector('.menu-btn');
+    // let menuOpen = false;
+    // menuBtn.addEventListener('click', () => {
+    //   if (!menuOpen) {
+    //     menuBtn.classList.add('open');
+    //     menuOpen = true;
+    //   } else {
+    //     menuBtn.classList.remove('open');
+    //     menuOpen = false;
+    //   }
+    // });
   }
 
   uliner(key) {
+    // console.log(key);
     // console.log('jchjhdj')
     document.getElementById('home').classList.remove('uliner');
     document.getElementById('about').classList.remove('uliner');
@@ -39,5 +53,7 @@ export class HeaderComponent implements OnInit {
     //     break;
     // }
   }
+
+
 
 }
