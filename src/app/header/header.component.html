@@ -1,45 +1,4 @@
 <div class="nav-bar">
-  <nav role="navigation">
-    <div id="menuToggle">
-      <input type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <ul id="menu">
-        <a
-          class="link uline uliner"
-          id="home2"
-          (click)="uliner('home')"
-          [routerLink]="['/home']"
-          >HOME</a
-        >
-        <a
-          class="link uline"
-          id="about2"
-          (click)="uliner('about')"
-          [routerLink]="['/about']"
-          >ABOUT</a
-        >
-        <a
-          class="link uline"
-          id="work2"
-          (click)="uliner('work')"
-          [routerLink]="['/work']"
-          >WORK</a
-        >
-        <a
-          class="link uline"
-          id="contact2"
-          (click)="uliner('contact')"
-          [routerLink]="['/contact']"
-        >
-          CONTACT
-        </a>
-      </ul>
-    </div>
-  </nav>
-
   <div class="flex img-div">
     <img
       class="logo-img"
@@ -92,4 +51,64 @@
       <option value="audi">CONTACT</option>
     </select>
   </div> -->
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+        <div class="">
+          <a
+            class="link ulineside uline2 uliner2"
+            id="home2"
+            (click)="uliner('home2')"
+            [routerLink]="['/home']"
+            >HOME</a
+          >
+        </div>
+        <div class="">
+          <a
+            class="link ulineside uline2"
+            id="about2"
+            (click)="uliner('about2')"
+            [routerLink]="['/about']"
+            >ABOUT</a
+          >
+        </div>
+
+        <div class="">
+          <a
+            class="link ulineside uline2"
+            id="work2"
+            (click)="uliner('work2')"
+            [routerLink]="['/work']"
+            >WORK</a
+          >
+        </div>
+
+        <div class="">
+          <a
+            class="link ulineside uline2"
+            id="contact2"
+            (click)="uliner('contact2')"
+            [routerLink]="['/contact']"
+          >
+            CONTACT
+          </a>
+        </div>
+
+        <div class="">
+          <a
+            class="link ulineside uline2"
+            id="work2"
+            (click)="uliner('work')"
+            href="../../assets/Prasheel_Resume_R.pdf"
+            >RESUME</a
+          >
+        </div>
+      </ul>
+    </div>
+  </nav>
 </div>

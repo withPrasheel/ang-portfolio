@@ -16,7 +16,7 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   /* background-color: chartreuse; */
   margin-top: 30px;
 }
@@ -36,7 +36,7 @@
 .card-image {
   height: 252px;
   width: 100%;
-  background-color: pink;
+  /* background-color: pink; */
   /* width: 40%; */
 }
 
@@ -112,4 +112,26 @@
 
 .card-image:hover img {
   transform: scale(1.3);
+}
+
+@media only screen and (max-width: 720px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* padding-top: 48px; */
+    /* width: 96%; */
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .project-list {
+    width: 90%;
+    margin-top: 48px;
+    padding-top: 0;
+  }
 }

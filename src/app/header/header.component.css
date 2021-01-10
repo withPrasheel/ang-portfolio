@@ -168,7 +168,7 @@
   display: block;
   position: relative;
   top: 25px;
-  left: 40px;
+  right: 40px;
 
   z-index: 1;
 
@@ -178,13 +178,13 @@
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: #007bff;
 
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  /* color: tomato; */
 }
 
 #menuToggle input {
@@ -197,7 +197,124 @@
 
   cursor: pointer;
 
-  opacity: 0; /* hide this */
+  opacity: 0; /* hide <nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <a
+        class="link uline uliner"
+        id="home2"
+        (click)="uliner('home')"
+        [routerLink]="['/home']"
+        >HOME</a
+      >
+      <a
+        class="link uline"
+        id="about2"
+        (click)="uliner('about')"
+        [routerLink]="['/about']"
+        >ABOUT</a
+      >
+      <a<nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+        <a
+          class="link uline uliner"
+          id="home2"
+          (click)="uliner('home')"
+          [routerLink]="['/home']"
+          >HOME</a
+        >
+        <a
+          class="link uline"
+          id="about2"
+          (click)="uliner('about')"
+          [routerLink]="['/about']"
+          >ABOUT</a
+        >
+        <a
+          class="link uline"
+          id="work2"
+          (click)="uliner('work')"
+          [routerLink]="['/work']"
+          >WORK</a
+        >
+        <a
+          class="link uline"
+          id="contact2"
+          (click)="uliner('contact')"
+          [routerLink]="['/contact']"
+        >
+          CONTACT
+        </a>
+      </ul>
+    </div>
+  </nav>
+        class="link uline"
+        id="work2"
+        (click)="uliner('work')"
+        [routerLink]="['/work']"
+        >WORK</a
+      >
+      <a
+        class="link uline"
+        id="contact2"
+        (click)="uliner('contact')"
+        [routerLink]="['/contact']"
+      >
+        CONTACT
+      </a>
+    </ul>
+  </div>
+</nav><nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <a
+        class="link uline uliner"
+        id="home2"
+        (click)="uliner('home')"
+        [routerLink]="['/home']"
+        >HOME</a
+      >
+      <a
+        class="link uline"
+        id="about2"
+        (click)="uliner('about')"
+        [routerLink]="['/about']"
+        >ABOUT</a
+      >
+      <a
+        class="link uline"
+        id="work2"
+        (click)="uliner('work')"
+        [routerLink]="['/work']"
+        >WORK</a
+      >
+      <a
+        class="link uline"
+        id="contact2"
+        (click)="uliner('contact')"
+        [routerLink]="['/contact']"
+      >
+        CONTACT
+      </a>
+    </ul>
+  </div>
+</nav> */
   z-index: 2; /* and place it over the hamburger */
 
   -webkit-touch-callout: none;
@@ -263,20 +380,23 @@
   */
 #menu {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
+  width: 100vw;
+  height: 120vh;
+  margin: -100px 0 0 -40vw;
   padding: 50px;
   padding-top: 125px;
   display: flex;
   flex-direction: column;
 
-  background: #ededed;
+  background: #ffffff;
+  /* color: #007bff; */
+
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
@@ -306,7 +426,37 @@
     display: none;
   }
 
-  .img-div {
+  /* .img-div {
     padding-left: 70%;
+  } */
+
+  .uline2 {
+    /* color: #fff; */
+    /* text-transform: uppercase; */
+    /* text-decoration: none; */
+    /* letter-spacing: 0.25em; */
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    align-items: center;
+  }
+
+  .uliner2 {
+    /* color: #f16a70; */
+    text-transform: uppercase;
+    display: inline-block;
+    /* font-size: 30; */
+    /* font-family: oswald; */
+    /* text-decoration: none; */
+    background-image: linear-gradient(to right, #007bff, #ffffff);
+    /* background-color: #007bff; */
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 4px;
+    transition: background-size 0.5s ease;
+  }
+  .ulineside {
+    font-size: x-large;
+    padding-top: 10px;
   }
 }

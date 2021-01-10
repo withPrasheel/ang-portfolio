@@ -35,6 +35,14 @@ export class HeaderComponent implements OnInit {
 
     // console.log(key);
     document.getElementById(key).classList.add('uliner');
+
+    document.getElementById('home2').classList.remove('uliner2');
+    document.getElementById('about2').classList.remove('uliner2');
+    document.getElementById('work2').classList.remove('uliner2');
+    document.getElementById('contact2').classList.remove('uliner2');
+
+    console.log(key);
+    document.getElementById(key).classList.add('uliner2');
     // switch (key) {
     //   case 'home':
     //     document.getElementById('home').classList.add('ulinear');
